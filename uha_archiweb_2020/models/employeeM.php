@@ -33,19 +33,32 @@ die();
 
     public function NewEmployee($EmployeeId,$NationalIDNumber,$ContactID,$LoginID,$Title,$BirthDate,$MaritalStatus,$Gender,$HireDate,$SalariedFlag,$VacationHours,$SickLeaveHours,$CurrentFlag,$rowguid,$ModifiedDate)
     {
-      try{  $sql = "INSERT INTO employee(EmployeeId,NationalIDNumber,ContactID,LoginID,ManagerID,Title,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,rowguid,ModifiedDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-        $stmt= $this->pdo->getPDO()->prepare($sql);
-        $stmt->execute([$EmployeeId,$NationalIDNumber,$ContactID,$LoginID,'185',$Title,$BirthDate,$MaritalStatus,$Gender,$HireDate,$SalariedFlag,$VacationHours,$SickLeaveHours,$CurrentFlag,$rowguid,$ModifiedDate]);
-    } catch (PDOException $e) {
-print "Erreur !: " . $e->getMessage() . "<br/>";
-die();
-}
-    }
+      try{
+          $sql = "SELECT COUNT(*) FROM employee WHERE EmployeeID='$EmployeeId'";
+          $stmt= $this->pdo->getPDO()->prepare($sql);
+          $res = $stmt->execute();
+          $row = $stmt->fetch();
+
+          if($row['0']==0)
+          {
+              $sql = "INSERT INTO employee(EmployeeId,NationalIDNumber,ContactID,LoginID,ManagerID,Title,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,rowguid,ModifiedDate) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+              $stmt= $this->pdo->getPDO()->prepare($sql);
+              $stmt->execute([$EmployeeId,$NationalIDNumber,$ContactID,$LoginID,'185',$Title,$BirthDate,$MaritalStatus,$Gender,$HireDate,$SalariedFlag,$VacationHours,$SickLeaveHours,$CurrentFlag,$rowguid,$ModifiedDate]);
+          }
+          else{
+              echo "l'employee est deja existant";
+          }
+        } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage() . "<br/>";
+        die();
+        }
+            }
     public function UpdateEmployee($EmployeeId,$NationalIDNumber,$ContactID,$LoginID,$Title)
     {try{
         $sql = "UPDATE  employee SET NationalIDNumber=?,ContactID=?,LoginID=?,Title=? WHERE EmployeeID=?";
         $stmt= $this->pdo->getPDO()->prepare($sql);
         $stmt->execute([$NationalIDNumber,$ContactID,$LoginID,$Title,$EmployeeId]);
+        echo 'welle modified';
 
     } catch (PDOException $e) {
 print "Erreur !: " . $e->getMessage() . "<br/>";

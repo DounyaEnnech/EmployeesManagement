@@ -41,7 +41,7 @@
                         <td><?=  $employe->HireDate ?></td>
                         <td><?=  $employe->Gender?></td>
                         <td><?=  $employe->ContactID ?></td>
-                        <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"  href="index.php?c=employee&m=EditEmploye&id=<?=  $employe->EmployeeID ?>"><span class="glyphicon glyphicon-pencil"></span></a></p></td>
+                        <td><p data-placement="top" data-toggle="tooltip" title="Edit"><a class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"  href="index.php?c=employee&m=UpdateEmployee&id=<?=  $employe->EmployeeID ?>"><span class="glyphicon glyphicon-pencil"></span></a></p></td>
                         <td><p data-placement="top" data-toggle="tooltip" title="Delete"><a class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" href="index.php?c=employee&m=deleteEmployee&id=<?=  $employe->EmployeeID ?>"><span class="glyphicon glyphicon-trash"></span></a></p></td>
                         <td><p data-placement="top" data-toggle="tooltip" title="Delete"><a class="btn btn-info" data-title="View" data-toggle="modal" data-target="#view" href="index.php?c=employee&m=listOne&id=<?=  $employe->EmployeeID ?>"><span class="glyphicon glyphicon-eye-open"></span></a></p></td>
 

@@ -75,7 +75,7 @@ class EmployeeController {
         $ModifiedDate = $_POST['ModifiedDate'];
         $model=new EmployeeModel();
         $model->NewEmployee($EmployeeId,$NationalIDNumber,$ContactID,$LoginID,$Title,$BirthDate,$MaritalStatus,$Gender,$HireDate,$SalariedFlag,$VacationHours,$SickLeaveHours,$CurrentFlag,$rowguid,$ModifiedDate);
-
+$this->liste();
     }
     public function deleteEmployee($id)
     {

@@ -1,0 +1,146 @@
+Ajax: L'architecture informatique ajax (acronyme d'asynchronous Javascript and XML) permet de construire des applications Web et des sites web dynamiques interactifs sur le poste client . 
+
+
+Rest: Le protocole REST (REpresentational State Transfer) constitue un style architectural et un mode de communication fréquemment utilisé dans le développement de services Web. 
+
+ 
+
+SI: Acteurs + Processus + données 
+
+
+
+MOA: Maîtrise d’Ouvrage. C’est la maîtrise d’ouvrage qui passe commande du livrable, qui définit son besoin, mandate la MOE, et paye pour le travail réalisé. 
+
+
+
+MOE: Maîtrise d’OEuvre. C’est la maîtrise d’oeuvre qui réalise, qui produit le livrable. 
+
+ 
+MySQL: MySQL est un système de gestion de bases de données relationnelles (SGBDR). 
+
+
+Proxy: Un proxy est un composant logiciel informatique qui joue le rôle d'intermédiaire en se plaçant entre deux hôtes pour faciliter ou surveiller leurs échanges. 
+
+ 
+
+VPN: En informatique, un réseau privé virtuel VPN (Virtual Private Network) est un système permettant de créer un lien direct entre des ordinateurs distants. 
+
+ 
+
+DMZ: En informatique, une zone démilitarisée (ou DMZ, de l'anglais demilitarized zone) est un sous-réseau séparé du réseau local et isolé de celui-ci et d'Internet (ou d'un autre réseau) par un pare-feu. 
+
+ 
+
+Client/serveur:  
+
+Version 1 : 
+
+o Client = consommateur de service = demandeur 
+
+o Serveur = producteur de service = fournisseur 
+
+· Version 2 : 
+
+o Le terme SERVEUR fait référence à tout processus qui reçoit une demande de service 
+
+(requête) venant d'un client via un réseau, traite cette demande et renvoie le résultat 
+
+(réponse) au demandeur (le CLIENT). 
+
+· Version 3 
+
+o CLIENT : Processus qui demande l'exécution d'une opération par l'envoi d'une demande. 
+
+o SERVEUR : Processus qui exécute la demande du client et qui transmet la réponse. 
+
+Middleware:  
+
+Version 1 
+
+o L'ensemble des services logiciels construits au-dessus d'un protocole de transport afin de 
+
+permettre l'échange de requêtes et des réponses associées entre client et serveur de 
+
+manière transparente. 
+
+· Version 2 
+
+o C'est la partie logicielle qui gère la communication entre le poste client et le poste 
+
+serveur 
+
+C'est un IPC: Inter-Processus Communication 
+
+Couches 5,6 et 7 du modèle OSI 
+
+Assure la mise en forme des données pour la couche 4 
+
+Gère le dialogue (l'envoi des requêtes et des résultats 
+
+ 
+
+ 
+
+RPC: Remote Procedure Call - le dialogue sans connexion 
+
+ 
+
+LAMP: Linux – Apache – MySQL – PHP 
+
+ 
+
+Bootstrap: C’est un framework CSS et Javascript. 
+
+ 
+
+API :Application Programming Interface (Interface de programmation au niveau applicatif) 
+
+C'est l'ensemble des fonctions qui permettent au poste client de réclamer un service: 
+
+_ Demande de connexion/déconnexion avec le serveur 
+
+_ Transfert des requêtes 
+
+_ Réception des résultats 
+
+ 
+
+FAP : Format And Protocols (Protocoles de communication et format des données) 
+
+_ Formate la requête en provenance de l'API puis récupère la trame et l'adresse à l'API 
+
+_ Maintien de la session avec le serveur (synchronisation) 
+
+Effectue la synchronisation entre client et serveur, 
+
+_ Gère la reconnaissance du format des données échangées 
+
+_ L'appel aux fonctions de transport du réseau. 
+
+ 
+
+Architecture d’un SI:  L'architecture d'un système d’information c'est : 
+
+· La représentation de l’organisation d'un système 
+
+· Une définition de ses composants constitutifs 
+
+· Une caractérisation de leurs relations (internes, externes) 
+
+· … et les principes régissant conception et évolution ! 
+
+ 
+
+SOAP : standard de communication pour les webservices 
+
+ 
+
+HTML: L’HyperText Markup Language, généralement abrégé HTML, est le format de données conçu pour représenter les pages web. 
+
+ 
+
+SQL : Structured Query Language. 
+
+ 
+
+ 
